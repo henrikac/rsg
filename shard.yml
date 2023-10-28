@@ -1,0 +1,13 @@
+name: rsg
+version: 0.1.0
+
+authors:
+  - Henrik Christensen <sensen1695@hotmail.com>
+
+targets:
+  rsg:
+    main: src/rsg.cr
+
+crystal: '>= 1.10.1'
+
+license: MIT
