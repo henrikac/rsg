@@ -61,13 +61,11 @@ if include_digits
   allowed_chars += digits
 end
 
-counter = 0
 random_str = ""
 
-until counter == str_len
+until random_str.size == str_len
   idx = Random::Secure.rand(allowed_chars.size)
   random_str += allowed_chars[idx]
-  counter += 1
 end
 
 puts random_str
