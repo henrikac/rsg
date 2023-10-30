@@ -1,6 +1,8 @@
 require "option_parser"
 require "random/secure"
 
+VERSION = "1.0.0"
+
 alpha_numerics = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 digits = "1234567890"
 
@@ -35,6 +37,10 @@ parser = OptionParser.parse do |parser|
   parser.on("-d", "--digits", "include digits") { include_digits = true }
   parser.on("-h", "--help", "show help") do
     puts parser
+    exit
+  end
+  parser.on("-v", "--version", "print #{PROGRAM_NAME} version") do
+    puts "#{PROGRAM_NAME} version #{VERSION}"
     exit
   end
   parser.invalid_option do |flag|
