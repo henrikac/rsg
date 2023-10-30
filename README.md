@@ -1,18 +1,32 @@
-# rsg
+# RSG (Random String Generator)
 
-TODO: Write a description here
+A random string generator.
+
+## Requirements
+
+- [Crystal](https://crystal-lang.org) is required to build the project
 
 ## Installation
 
-TODO: Write installation instructions here
+- Clone the project
+- Run `crystal build src/rsg.cr`
+- Move the binary into a folder that is in your `PATH`, e.g. `$HOME/.local/bin`
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ rsg -c
+pCgkGGmRIcGZFIDPtaBnggXjqqKuaEYU
 
-## Development
+$ rsg -d
+28334261621948777759686618901126
 
-TODO: Write development instructions here
+$ rsg -c -d
+YpY9mAVVw3LliNvDZrnhNfU0Kjm5rxCE
+
+$rsg -c -d -l 50
+Nk0Pum2Jui88Y7d64U4mUsxkclVHR33KEF6VqdVwiaOyPqE1aw
+```
 
 ## Contributing
 
